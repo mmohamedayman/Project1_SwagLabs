@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test Suite">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+
+        <listener class-name="org.testng.reporters.EmailableReporter" />
+    </listeners>
+    <test name="Smoke Test">
+        <classes>
+            <class name="features.F01_login" />
+            <class name="features.F02_Cart" />
+            <class name="features.F03_ContinueBuyingProcess" />
+            <class name="features.F04_SocialMediaItems" />
+            <class name="features.F05_Menu_AllItems_About_LogOut_ResetAppState" />
+            <class name="features.F06_FilteredSearch" />
+        </classes>
+    </test>
+</suite>
